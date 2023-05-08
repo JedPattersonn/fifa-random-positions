@@ -7,6 +7,12 @@ const Footer: React.FC = () => {
             Jed Patterson
           </a>
         </p>
+        <p>
+          Soure Code:{' '}
+          <a href="https://github.com/JedPattersonn/fifa-random-positions" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700">
+            GitHub
+          </a>
+        </p>
       </footer>
     );
   };
