@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import React, { useState } from 'react';
 import FormationButton from '../components/FormationButton';
 import PositionButton from '../components/PositionButton';
+import Footer from '../components/Footer';
 
 const Home: NextPage = () => {
   const [formation, setFormation] = useState<string | null>(null);
@@ -12,6 +13,7 @@ const Home: NextPage = () => {
       <FormationButton onFormationSelected={setFormation} />
       <p className="my-4">{formation ? `Selected Formation: ${formation}` : 'No Formation Selected'}</p>
       <PositionButton formation={formation} />
+      <Footer />
     </div>
   );
 };
