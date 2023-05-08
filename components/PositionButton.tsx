@@ -14,6 +14,7 @@ const PositionButton: React.FC<Props> = ({ formation }) => {
     if (formation) {
       setRemainingPositions([...formationPositions[formation]]);
       setTakenPositions([]);
+      setCurrentPosition(null);
     }
   }, [formation]);
 
