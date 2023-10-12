@@ -6,7 +6,7 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Random Fifa Positions - EA FC 24",
+  title: "Random Fifa Positions - EA FC 24, FIFA 24, FIFA 23, and more",
   description:
     "Get random fifa formations and positions for you and your friends. Up to date for EA FC 24. Great for pro clubs, friendlies, and ultimate team.",
   alternates: {
