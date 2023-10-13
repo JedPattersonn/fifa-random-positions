@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { formationPositions } from "../data/formations";
+import NewFormation from "@/lib/actions";
 
 interface Props {
   setFormation: (formation: string | null) => void;
@@ -28,12 +29,15 @@ const FormationButton: React.FC<Props> = ({ setFormation }) => {
 
   return (
     <div className="flex flex-col items-center mb-8">
-      <button
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4"
-        onClick={handleClick}
-      >
-        Get Random Formation
-      </button>
+      <form action={NewFormation}>
+        <input type="hidden" name="formation" value={manualFormation} />
+        <button
+          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4"
+          onClick={handleClick}
+        >
+          Get Random Formation
+        </button>
+      </form>
       <label htmlFor="manualFormation" className="mb-2">
         Or choose a formation:
       </label>
