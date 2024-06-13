@@ -6,10 +6,17 @@ const Footer: React.FC = () => {
         <a
           href="https://jedpatterson.com"
           target="_blank"
-          rel="noopener noreferrer"
           className="text-blue-500 hover:text-blue-700"
         >
           Jed Patterson
+        </a>{" "}
+        &{" "}
+        <a
+          href="htps://sidekicksoftware.co"
+          target="_blank"
+          className="text-blue-500 hover:text-blue-700"
+        >
+          Side Kick Software
         </a>
       </p>
     </footer>
