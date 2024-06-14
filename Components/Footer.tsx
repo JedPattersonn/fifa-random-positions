@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
         </a>{" "}
         &{" "}
         <a
-          href="htps://sidekicksoftware.co"
+          href="https://sidekicksoftware.co"
           target="_blank"
           className="text-blue-500 hover:text-blue-700"
         >
