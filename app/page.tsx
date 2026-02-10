@@ -4,7 +4,7 @@ import { formationPositions } from "@/data/formations";
 import Script from "next/script";
 import { useMemo, useState } from "react";
 
-const HOME_URL = "https://randomfifapositions.com";
+const HOME_URL = "https://www.randomfifapositions.com";
 
 const faqSchema = {
   "@context": "https://schema.org",

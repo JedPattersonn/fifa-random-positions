@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const SITE_URL = "https://randomfifapositions.com";
+const SITE_URL = "https://www.randomfifapositions.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
