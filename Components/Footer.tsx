@@ -9,14 +9,6 @@ const Footer: React.FC = () => {
           className="text-blue-500 hover:text-blue-700"
         >
           Jed Patterson
-        </a>{" "}
-        &{" "}
-        <a
-          href="https://sidekicksoftware.co"
-          target="_blank"
-          className="text-blue-500 hover:text-blue-700"
-        >
-          Side Kick Software
         </a>
       </p>
     </footer>

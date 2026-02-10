@@ -1,48 +1,71 @@
 import "./globals.css";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import type { Metadata, Viewport } from "next";
 import { Analytics } from "@vercel/analytics/react";
 
-const inter = Inter({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
-  title: "Random Fifa Positions - EA FC 24, FIFA 24, FIFA 23, and more",
-  description:
-    "Get random fifa formations and positions for you and your friends. Up to date for EA FC 24. Great for pro clubs, friendlies, and ultimate team.",
-  alternates: {
-    canonical: "https://randomfifapositions.com",
+  metadataBase: new URL("https://randomfifapositions.com"),
+  title: {
+    default: "Random FIFA Positions | Matchday Position Generator",
+    template: "%s | Random FIFA Positions",
   },
+  description:
+    "Generate random FIFA and EA FC formations and positions instantly for Pro Clubs, friendlies, and Ultimate Team sessions.",
+  applicationName: "Random FIFA Positions",
   creator: "Jed Patterson",
-
+  publisher: "Random FIFA Positions",
+  alternates: {
+    canonical: "/",
+  },
   keywords: [
-    "fifa",
-    "random",
-    "fifa 24",
-    "fifa 23",
-    "ea fc",
-    "ea fc 24",
-    "positions",
-    "pro clubs",
-    "ultimate team",
     "random fifa positions",
-    "random fifa",
-    "random fifa formation",
-    "random fifa 24",
-    "random fifa 23",
-    "random ea fc",
-    "random ea fc 24",
-    "random positions",
+    "ea fc position generator",
+    "fifa formation generator",
+    "pro clubs random positions",
+    "random ea fc formations",
+    "fifa squad challenge",
   ],
+  openGraph: {
+    type: "website",
+    url: "https://randomfifapositions.com",
+    siteName: "Random FIFA Positions",
+    title: "Random FIFA Positions | Matchday Position Generator",
+    description:
+      "Spin a formation, assign roles, and run instant squad challenges with a mobile-first random FIFA position generator.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Random FIFA Positions | Matchday Position Generator",
+    description:
+      "Generate random FIFA and EA FC formations and positions instantly for your next match.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  category: "gaming",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#091223",
 };
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         {children}
         <Analytics />
       </body>
